@@ -8,6 +8,7 @@ gem 'rails', '4.1.6'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'capybara', '2.2.0'
 end
 
 # Use SCSS for stylesheets
@@ -31,9 +32,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-group :test do
-  gem 'capybara', '1.1.2'
-end
+
 
 group :production do
   gem 'pg', '0.12.2'
