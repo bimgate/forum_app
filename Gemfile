@@ -10,6 +10,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.1.0'
   gem 'capybara'
+  gem 'annotate', ' ~> 2.4.1.beta'
 end
 
 # Use SCSS for stylesheets
@@ -20,6 +21,8 @@ gem 'uglifier', '~>2.5.3'
 gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
+
+gem 'protected_attributes'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -43,7 +46,7 @@ end
 
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+ gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
 # gem 'unicorn'

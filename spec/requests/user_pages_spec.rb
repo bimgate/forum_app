@@ -13,7 +13,7 @@ include Capybara::DSL
 
 
 
-describe "Sign up" do
+RSpec.describe "Sign up" do
 	subject { page }
 
 before { visit signup_path }
