@@ -11,6 +11,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.1.0'
   gem 'capybara'
   gem 'annotate', ' ~> 2.4.1.beta'
+  gem 'factory_girl_rails'
 end
 
 # Use SCSS for stylesheets
