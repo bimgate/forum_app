@@ -12,6 +12,7 @@ group :development, :test do
   gem 'capybara'
   gem 'annotate', ' ~> 2.4.1.beta'
   gem 'factory_girl_rails'
+  gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
@@ -40,9 +41,8 @@ gem 'spring',        group: :development
 
 
 group :production do
-  gem 'pg', '0.12.2'
+ gem 'pg', '0.12.2'
 end
-
 
 
 
