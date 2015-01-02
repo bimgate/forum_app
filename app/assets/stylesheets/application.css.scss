@@ -151,13 +151,18 @@ margin-right: 10px;
 }
 
 /* forms */
-input[type="text"], textarea, select, .uneditable-input {
+
+input, textarea, select, .uneditable-input {
 border: 1px solid #bbb;
 width: 100%;
-height: 2em;
+padding: 10px;
+height: 50px;
 margin-bottom: 15px;
 @include box_sizing;
 }
+
+
+
 
 /* forms */
 
