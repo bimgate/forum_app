@@ -8,20 +8,20 @@
 		<%= form_for(@user) do |f| %>
           <%= render 'shared/error_messages' %>
 
-		   <%= f.label :name %>
-		   <%= f.text_field :name %>
+		  <li> <%= f.label :name %></li>
+		    <%= f.text_field :name %>
 
-		   <%= f.label :email %>
+		   <li><%= f.label :email %></li>
 		   <%= f.text_field :email %>
 
-		   <%= f.label :password %>
-		   <%= f.password_field :password %>
+		  <li><%= f.label :password %></li>
+		  <li><%= f.password_field :password %></li>
 
-		   <%= f.label :password_confirmation, "Confirmation" %>
+		  <li><%= f.label :password_confirmation, "Confirmation" %></li>
 		   <%= f.password_field :password_confirmation %>
 
 
-		   <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+		  <li><%= f.submit "Create my account", class: "btn btn-large btn-primary" %></li>
 		<% end %>
 	</ul>
 	</div>
