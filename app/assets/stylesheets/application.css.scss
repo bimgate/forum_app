@@ -151,7 +151,7 @@ margin-right: 10px;
 }
 
 /* forms */
-input, textarea, select, .uneditable-input {
+input[type="text"], textarea, select, .uneditable-input {
 border: 1px solid #bbb;
 width: 100%;
 padding: 10px;
