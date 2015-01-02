@@ -12,7 +12,6 @@ group :development, :test do
   gem 'capybara'
   gem 'annotate', ' ~> 2.4.1.beta'
   gem 'factory_girl_rails'
-  gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
@@ -39,13 +38,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 
+#gem 'pg'
 
-
-group :production do
-  gem 'pg'
-  gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
-  gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
-end
+gem 'rails_12factor', group: :production
 
 
 
