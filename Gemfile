@@ -3,13 +3,13 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass', '~> 2.3.0.1'
 # Use sqlite3 as the database for Active Record
 
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.1.0'
-  gem 'capybara'
+  gem 'capybara', '2.2.0'  
   gem 'annotate', ' ~> 2.4.1.beta'
   gem 'factory_girl_rails'
 end
@@ -29,6 +29,7 @@ gem 'protected_attributes'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.

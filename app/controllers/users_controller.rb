@@ -16,6 +16,7 @@ def create
 
 	@user = User.new(params[:user])
 	if @user.save 
+		sign_in @user
 		flash[:success] = "Welcome to the StockWisperer Forum!"
 		redirect_to @user
 	else 
