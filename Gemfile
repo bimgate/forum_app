@@ -12,10 +12,13 @@ gem 'bootstrap-sass', '~> 2.3.0.1'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.1.0'
-  gem 'capybara', '2.2.0'  
+  gem 'capybara', '2.2.0'
+  gem 'faker'
   gem 'annotate', ' ~> 2.4.1.beta'
   gem 'factory_girl_rails'
 end
+
+gem 'bootstrap_form'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -27,6 +30,11 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'protected_attributes'
+
+gem 'will_paginate', '3.0.5'
+gem 'bootstrap-will_paginate', '0.0.6'
+
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 2.0.0'

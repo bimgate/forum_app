@@ -19,14 +19,27 @@ RSpec.describe User, :type => :model do
     it { should respond_to(:authenticate) }
 
 
-before { @user = User.new(name: "Example User", email: "user@example.com",
-	password: "foobar", password_confirmation: "foobar") }
+before { @user = User.new(name: "Bratislav Miletic", email: "bimgate@gmail.com",
+	password: "zicakv12", password_confirmation: "zicakv12") }
 subject { @user }
 
 describe "remember token" do
 before { @user.save }
 it { @user.remember_token.should_not be_blank }
 end
+
+it { should respond_to(:admin) }
+it { should respond_to(:authenticate) }
+
+it { should be_valid }
+it { should_not be_admin }
+
+describe "with admin attribute set to 'true'" do
+before { @user.toggle!(:admin) }
+
+it { should be_admin }
+end
+
 
 
 it { should respond_to(:name) }
