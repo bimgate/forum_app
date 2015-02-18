@@ -3,9 +3,9 @@ desc "Fill database with sample data"
 task populate: :environment do
 
 admin = User.create!(name: "bimgate",
-email: "bimgate@railstutorial.org",
-password: "zicakv12",
-password_confirmation: "zicakv12")
+email: "bimgate@gmail.com",
+password: "bimgate",
+password_confirmation: "bimgate")
 admin.toggle!(:admin)
 
 99.times do |n|
