@@ -1,3 +1,23 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *
+ *
+ *= require_bootstrap
+ *= require_self
+ *
+ */
+
+
 
 @import "bootstrap"; 
 
@@ -57,21 +77,63 @@ line-height: 1.7em;
 
 /* header */
 
+.navbar { .navbar-inner {
+    background-color: #E0F5FF;    
+    background-image: none;
+	 
+     } } 
+
+.navbar .nav > li > a {
+	color: black;
+	font-weight: normal;
+	
+}
+
+.navbar .nav > li {
+	
+}
+
+.navbar .nav > li > a:hover {
+	color: #fff;
+}
+
+.dropdown-menu {
+	
+}
+
+.dropdown-menu li > a:hover {
+	background-color: orange;    
+    background-image: none;
+}
+
+/* body */
+
+.container .center {
+	background-color: #E0F5FF;    
+    background-image: none;	
+}
+
+body {
+	background-color: #EBFFF5;    
+    background-image: none;	
+}
+
 #logo {
 float: left;
 margin-right: 10px;
 font-size: 1.7em;
 color: #0000FF;
-text-transform: uppercase;
+
 letter-spacing: -1px;
 padding-top: 9px;
 font-weight: bold;
 line-height: 1;
-&:hover {
+}
+#logo:hover {
 color: #fff;
 text-decoration: none;
 }
-}
+
 
 
 /* footer */
@@ -151,7 +213,6 @@ margin-right: 10px;
 }
 
 /* forms */
-
 input, textarea, select, .uneditable-input {
 border: 1px solid #bbb;
 width: 100%;
@@ -160,8 +221,6 @@ height: auto !important;
 margin-bottom: 15px;
 @include box_sizing;
 }
-
-
 
 /* forms */
 
@@ -177,13 +236,13 @@ margin: 0 0 18px 0;
 @extend .error;
 }
 
-/* users index */
+/* users index*/
 
 .users {
 	
 	list-stile: none;
 	margin: 0;
-	
+
 	li {
 	overflow: auto;
 	padding: 10px 0;
@@ -192,23 +251,33 @@ margin: 0 0 18px 0;
 	border-bottom: 1px solid $grayLighter;
 	}
 	}
+	}
+
+/* microposts */
+.microposts {
+list-style: none;
+margin: 10px 0 0 0;
+li {
+padding: 10px 0;
+border-top: 1px solid #e8e8e8;
+}
 }
 
-
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.content {
+display: block;
+}
+.timestamp {
+color: $grayLight;
+}
+.gravatar {
+float: left;
+margin-right: 10px;
+}
+aside {
+textarea {
+height: 100px;
+margin-bottom: 5px;
+}
+}
  
  

@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
-gem 'bootstrap-sass', '~> 2.3.0.1'
+gem 'bootstrap-sass', '2.1'
 gem "heroku"
 
       
@@ -18,7 +18,7 @@ group :development, :test do
   gem 'factory_girl_rails'
 end
 
-gem 'bootstrap_form'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'

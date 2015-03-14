@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
 
 attr_accessible :name, :email, :password, :password_confirmation
 has_secure_password
+has_many :microposts, dependent: :destroy
 
 validates(:name, presence: true)
 
@@ -29,6 +30,10 @@ validates :password, presence: true, length: { minimum: 6 }
 
 validates :password_confirmation, length: { minimum: 6 }, allow_blank: true
 
+def feed
+# This is preliminary. See "Following users" for the full implementation.
+Micropost.where("user_id = ?", id)
+end
 
 private
 
