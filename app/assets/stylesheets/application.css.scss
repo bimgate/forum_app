@@ -102,15 +102,21 @@ line-height: 1.7em;
 .navbar .nav > li > a:hover {
 	text-shadow: 0px 0 15px white;
 	color: white;
-	text-transform: full-width;
-}
-
-.dropdown-menu {
 	
 }
 
+.dropdown-menu {
+background-color: #D7CBD0;    
+    background-image: none;
+	
+}
+
+.dropdown-menu .divider {
+	 
+}
+
 .dropdown-menu li > a:hover {
-	background-color: orange;    
+	background-color: #6E1236;    
     background-image: none;
 }
 
