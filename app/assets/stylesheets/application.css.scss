@@ -62,6 +62,12 @@ letter-spacing: -2px;
 margin-bottom: 30px;
 text-align: center;
 }
+
+.hero-unit h1 {
+color: #6E1236;    
+background-image: none;
+    }
+
 h2 {
 font-size: 1.7em;
 letter-spacing: -1px;
@@ -78,13 +84,13 @@ line-height: 1.7em;
 /* header */
 
 .navbar { .navbar-inner {
-    background-color: #E0F5FF;    
+    background-color: #6E1236;    
     background-image: none;
 	 
      } } 
 
 .navbar .nav > li > a {
-	color: black;
+	color: #EBFFF5;
 	font-weight: normal;
 	
 }
@@ -94,7 +100,9 @@ line-height: 1.7em;
 }
 
 .navbar .nav > li > a:hover {
-	color: #fff;
+	text-shadow: 0px 0 15px white;
+	color: white;
+	text-transform: full-width;
 }
 
 .dropdown-menu {
@@ -118,11 +126,25 @@ body {
     background-image: none;	
 }
 
+/*button*/
+
+.btn-primary {
+	background-color: #6E1236;
+	border-color: #6E1236;
+	background-image: none;	
+}
+
+.btn-primary:hover {
+	background-color: #933157;    
+    background-image: none;	
+}
+
+
 #logo {
 float: left;
 margin-right: 10px;
 font-size: 1.7em;
-color: #0000FF;
+color: #EBFFF5;
 
 letter-spacing: -1px;
 padding-top: 9px;
@@ -130,7 +152,7 @@ font-weight: bold;
 line-height: 1;
 }
 #logo:hover {
-color: #fff;
+text-shadow: 0px 0 15px white;
 text-decoration: none;
 }
 
