@@ -12,7 +12,8 @@ def create
 		# Sign the user in and redirect to the user's show page.
 
 		sign_in user		
-		redirect_back_or user
+		# redirect_back_or user //(OVDE JE REDIREKTOVAO POLSE SIGN IN-a NA PROFIL stranicu)
+		redirect_to root_path
 
 	else
 		flash.now[:error] = 'Invalid email/password combination' 
