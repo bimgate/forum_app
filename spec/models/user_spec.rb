@@ -13,7 +13,8 @@ require 'rails_helper'
 
 RSpec.describe User, :type => :model do
 
-
+    it { should respond_to(:feed) }
+    it { should respond_to(:relationships) }
 	it { should respond_to(:password_confirmation) }
     it { should respond_to(:remember_token) }
     it { should respond_to(:authenticate) }
